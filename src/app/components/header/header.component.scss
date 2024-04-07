@@ -30,10 +30,26 @@
     align-items: center;
     gap: 50px;
 }
-.nav11 div{
+.Home{
     display: flex;
     align-items: center;
-    gap: 20px;
+}
+.Home img{
+    width: 40px;
+    height: 40px;
+    display: none;
+}
+.Home:hover{
+    color: yellow;
+    border-bottom: 5px solid yellow;
+}
+.Cart{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.Cart:hover{
+    gap: 40px;
 }
 .all2 {
     display: inline-block;
