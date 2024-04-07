@@ -1,26 +1,50 @@
-img{
-    width: auto;
-    height: auto;
-}
 .all{
     width: 100%;
+    height: 120px;
+    display: flex;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: rgba(0, 0, 0,0.8);
+    border-bottom: rgb(255, 0, 0) solid 5px;
 }
-.nav{
-    width: 1300px;
+.logo{
+    width: 200px;
     height: 100px;
+}
+.nav1{
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.deliveryicon{
+    width: 40px;
+    height: 40px;
+}
+.nav11{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 50px;
 }
-button{
-    width: 300px;
-    height: 50px;
-    background-color: rgb(14, 14, 170);
+.nav11 div{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.all2 {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+    background: url(./inner_banner.jpg) no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    height: 389px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
-    font-weight: 600;
-    font-size: 16px;
-    border-radius: 7px;
 }
