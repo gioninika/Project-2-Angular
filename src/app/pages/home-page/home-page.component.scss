@@ -1,0 +1,220 @@
+.allpage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.all{
+    width: 1150px;
+    margin-top: -1500px;
+}
+.categoriestitle{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.categories{
+    margin-top: 30px;
+    display: flex;
+    width: 1150px;
+    border-bottom: 3px solid red;
+}
+.categories div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.All{
+    width: 75px;
+    height: 50px;
+}
+.Salads{
+    width: 75px;
+    height: 50px;
+}
+.Soups{
+    width: 75px;
+    height: 50px;
+}
+.ChickenDishes{
+    width: 150px;
+    height: 50px;
+}
+.BeefDishes{
+    width: 150px;
+    height: 50px;
+}
+.SeafoodDishes{
+    width: 150px;
+    height: 50px;
+}
+.VegitableDishes{
+    width: 150px;
+    height: 50px;
+}
+.BitsBites{
+    width: 150px;
+    height: 50px;
+}
+.OnTheSide{
+    width: 150px;
+    height: 50px;
+}
+.All:hover{
+    width: 75px;
+    height: 50px;
+    border: 1px solid red;
+    background-color: red;
+    color: white;
+}
+.Salads:hover{
+    width: 75px;
+    height: 50px;
+    border: 1px solid red;
+    background-color: red;
+    color: white;
+}
+.Soups:hover{
+    width: 75px;
+    height: 50px;
+    border: 1px solid red;
+    background-color: red;
+    color: white;
+}
+.ChickenDishes:hover{
+    width: 150px;
+    height: 50px;
+    border: 1px solid red;
+    background-color: red;
+    color: white;
+}
+.BeefDishes:hover{
+    width: 150px;
+    height: 50px;
+    border: 1px solid red;
+    background-color: red;
+    color: white;
+}
+.SeafoodDishes:hover{
+    width: 150px;
+    height: 50px;
+    border: 1px solid red;
+    background-color: red;
+    color: white;
+}
+.VegitableDishes:hover{
+    width: 150px;
+    height: 50px;
+    border: 1px solid red;
+    background-color: red;
+    color: white;
+}
+.BitsBites:hover{
+    width: 150px;
+    height: 50px;
+    border: 1px solid red;
+    background-color: red;
+    color: white;
+}
+.OnTheSide:hover{
+    width: 150px;
+    height: 50px;
+    border: 1px solid red;
+    background-color: red;
+    color: white;
+}
+.filter {
+    margin-top: 30px;
+    width: 238px;
+    height: 300px;
+    background-color: #F1F1F1;
+    border: 2px solid #CFCFCF;
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Filtertitle{
+    font-weight: 600;
+  }
+  .a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .slider-container {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .slider {
+    margin-top: 10px;
+    width: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+    background: red;
+    cursor: pointer;
+  }
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: white;
+    height: 15px;
+    width:15px;    
+ }
+  .slider::-moz-range-thumb {
+    border: none; /*Removes extra border that FF applies*/
+    border-radius: 0; /*Removes default border-radius that FF applies*/
+    background-color: white;
+    height: 2rem;
+    width: 1rem;
+}
+
+  .checkbox1 {
+    margin-bottom: 10px;
+    display: flex;
+  }
+  .checkbox1 input{
+    width: 20px;
+    height: 20px;
+  }
+  .checkbox1 p{
+    margin-left: 10px;
+  }
+  .checkbox2 {
+    margin-bottom: 10px;
+    display: flex;
+  }
+  .checkbox2 input{
+    width: 20px;
+    height: 20px;
+  }
+  .checkbox2 p{
+    margin-left: 10px;
+  }
+  
+  .red-box1 {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 900;
+    color: white;
+    top: 150px;
+    width: 180px;
+    height: 35px;
+    border-radius: 6px;
+    background-color: red;
+    margin-bottom: 10px;
+    line-height: 4dvh;
+  }
+  
+  .red-box2 {
+    margin-top: 30px;
+    padding-left: 40px;
+    width: 180px;
+    height: 35px;
+    border-radius: 6px;
+    background-color: red;
+    color: white;
+    line-height: 4dvh;
+  }

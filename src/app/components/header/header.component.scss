@@ -48,6 +48,16 @@
     align-items: center;
     gap: 10px;
 }
+.Cart p{
+    width: 50px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+    background-color: red;
+    border-radius: 5px;
+}
 .Cart:hover{
     gap: 40px;
 }
