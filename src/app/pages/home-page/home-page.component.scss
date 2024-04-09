@@ -2,6 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 .all{
     width: 1150px;
@@ -165,8 +166,8 @@
     border: 1px solid black;
  }
   .slider::-moz-range-thumb {
-    border: none; /*Removes extra border that FF applies*/
-    border-radius: 0; /*Removes default border-radius that FF applies*/
+    border: none;
+    border-radius: 0;
     background-color: white;
     height: 2rem;
     width: 1rem;

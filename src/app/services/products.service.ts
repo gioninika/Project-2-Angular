@@ -1,9 +1,19 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProductsService {
+  productList: any
+  apiUrl = "https://restaurant.stepprojects.ge/api/Products/GetAll"
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
+
+  getProducts() {
+    this.http.get(this.apiUrl).subscribe((data) => {
+      this.productList = data
+    })
+    return this.productList
+  }
 }

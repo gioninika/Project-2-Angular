@@ -35,7 +35,11 @@
                     <div class="red-box2"><h4 class="RBT2" >APPLY FILTER</h4></div>    
                     </div>
                 </div>
-            <div class="list"></div>
+            <div class="list">
+                <div class="card" *ngFor="let product of productsService.getProducts()">
+                    <img class="productimage" [src]="product.image" [alt]="">
+                </div>
+            </div>
         </div>
     </div>
 </div>
