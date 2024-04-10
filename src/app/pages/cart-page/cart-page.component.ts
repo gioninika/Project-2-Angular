@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ProductsService } from '../../services/products.service';
 
 @Component({
   selector: 'app-cart-page',
@@ -6,5 +7,14 @@ import { Component } from '@angular/core';
   styleUrl: './cart-page.component.scss'
 })
 export class CartPageComponent {
+products: any
+
+constructor(public productsService: ProductsService){}
+
+// ngOnInit() {
+//   this.productsService.getBasket().subscribe((data) =>{
+//     this.products = data
+//   })
+// }
 
 }

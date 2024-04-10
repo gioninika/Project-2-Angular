@@ -36,10 +36,27 @@
                     </div>
                 </div>
             <div class="list">
-                <div class="card" *ngFor="let product of productsService.getProducts()">
-                    <img class="productimage" [src]="product.image" [alt]="">
+                <div class="card" *ngFor="let product of products">
+                    <div class="b">
+                        <img class="productimage" [src]="product.image" [alt]="">
+                        <h3>{{product.name}}</h3>
+                        <p class="spiciness">Spiciness: {{product.spiciness}}</p>
+                        <div class="infos">
+                            <div class="nuts" *ngIf="product.nuts">
+                                <p>With Nuts</p>
+                            </div>
+                            <div class="vegetarians" *ngIf="product.vegeterian">
+                                <p>Vegetarian</p>
+                            </div>                
+                        </div>
+                        <div class="pbtn">
+                            <h1>{{product.price}} $</h1>
+                            <div class="btn">
+                                <!-- <button (click)="productsService.addToBasket(product.id)">Add To Cart</button> -->
+                            </div>
+                        </div>
+                    </div>  
                 </div>
             </div>
         </div>
-    </div>
 </div>

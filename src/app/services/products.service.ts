@@ -5,9 +5,8 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class ProductsService {
-  productList: any
   apiUrl = "https://restaurant.stepprojects.ge/api/Products/GetAll"
-
+  productList: any
   constructor(private http: HttpClient) { }
 
   getProducts() {
@@ -16,4 +15,10 @@ export class ProductsService {
     })
     return this.productList
   }
+  // getBasket(){
+  //   return this.http.get(this.apiUrl + "Baskets/GetAll")
+  // }
+  // addToBasket(product:){
+  //   return this.http.get(this.apiUrl + "Baskets/AddToBasket", )
+  // }
 }

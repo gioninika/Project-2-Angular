@@ -5,7 +5,8 @@
     <h2 class="page2" >cart</h2>
    
 </div>
-<div class="allpage" style="height: 1850px;">
+><div class="allpage" style="height: 1850px;">
+<div class="a">
     <div class="all">
         <div class="categoriestitle">
             <h1>Cart</h1>             
@@ -21,4 +22,18 @@
             </div>
         </div>
     </div>
+    <div class="all2" *ngFor="let item of products">
+        <div class="categories2">
+            <div class="Product2">
+                <p>{{item.product.name}}</p>
+            </div>
+            <div class="info2">
+                <p class="Qty2">{{item.quantity}}</p>
+                <p class="Price2">{{item.price}}</p>
+                <!-- <p class="Total2">{{item.product.Total}}</p> -->
+            </div>
+        </div>
+    </div>
+</div>
+
 </div>

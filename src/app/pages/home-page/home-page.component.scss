@@ -2,11 +2,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 .all{
     width: 1150px;
-    margin-top: -1500px;
+    margin-top: 1100px;
 }
 .categoriestitle{
     margin-top: 30px;
@@ -219,4 +218,58 @@
     background-color: red;
     color: white;
     line-height: 4dvh;
+  }
+  .flist{
+    width: 1100px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .list{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+  }
+  .productimage{
+    width: 200px;
+    height: 180px;
+  }
+  .pbtn{
+    display: flex;
+    justify-content: space-between;
+  }
+  .infos{
+    display: flex;
+    justify-content: space-evenly;
+    width: 200px;
+  }
+  .infos p{
+    font-size: 15px;
+    color: red;
+  }
+  .card{
+    width: 250px;
+    height: 300px;
+    border: 2px solid rgb(184, 184, 184);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card:hover{
+    box-shadow: 5px 5px 5px gray;
+  }
+  .spiciness{
+    color: rgb(160, 160, 160);
+  }
+  .pbtn button{
+    background-color: white;
+    border: black 2px solid;
+    width: 80px;
+    height: 40px;
+  }
+  .pbtn button:hover{
+    background-color: red;
+    border: none;
+    color: white;
   }
