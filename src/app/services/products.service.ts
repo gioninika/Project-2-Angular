@@ -5,20 +5,25 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class ProductsService {
-  apiUrl = "https://restaurant.stepprojects.ge/api/Products/GetAll"
+  apiUrl = "https://restaurant.stepprojects.ge/api/"
   productList: any
   constructor(private http: HttpClient) { }
 
   getProducts() {
-    this.http.get(this.apiUrl).subscribe((data) => {
-      this.productList = data
-    })
-    return this.productList
+      return this.http.get(this.apiUrl + "Products/GetAll")
+    }
+  getBasket(){
+    return this.http.get(this.apiUrl + "Baskets/GetAll")
   }
-  // getBasket(){
-  //   return this.http.get(this.apiUrl + "Baskets/GetAll")
-  // }
-  // addToBasket(product:){
-  //   return this.http.get(this.apiUrl + "Baskets/AddToBasket", )
-  // }
+  addToBasket(id: any){
+    let postReq ={
+      "quantity": Number,
+      "price": Number,
+      "productId": id
+    }
+    return this.http.post(this.apiUrl + "Baskets/AddToBasket", postReq)
+  }
+  deleteBasket(id: any){
+    return this.http.delete(this.apiUrl + `Baskets/DeleteProduct/${id}`)
+  }
 }

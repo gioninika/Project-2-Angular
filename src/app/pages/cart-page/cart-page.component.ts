@@ -11,10 +11,10 @@ products: any
 
 constructor(public productsService: ProductsService){}
 
-// ngOnInit() {
-//   this.productsService.getBasket().subscribe((data) =>{
-//     this.products = data
-//   })
-// }
+ngOnInit() {
+  this.productsService.getBasket().subscribe((data) =>{
+    this.products = data
+  })
+}
 
 }

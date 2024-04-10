@@ -30,7 +30,8 @@
             <div class="info2">
                 <p class="Qty2">{{item.quantity}}</p>
                 <p class="Price2">{{item.price}}</p>
-                <!-- <p class="Total2">{{item.product.Total}}</p> -->
+                <p class="Total2">{{item.product.Total}}</p>
+                <button (click)="productsService.deleteBasket(item.product.id)">Delete</button>
             </div>
         </div>
     </div>

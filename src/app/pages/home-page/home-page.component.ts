@@ -7,16 +7,14 @@ import { ProductsService } from '../../services/products.service';
   styleUrl: './home-page.component.scss'
 })
 export class HomePageComponent {
-addBasket(arg0: any): any {
-throw new Error('Method not implemented.');
-}
   products: any
   constructor(public productsService: ProductsService ) {
-
+    
   }
-  // ngOnInit() {
-  //   this.productsService.getProducts().subscribe((data) =>{
-  //     this.products = data
-  //   })
-  // }
+  ngOnInit() {
+    this.productsService.getProducts().subscribe((data) =>{
+      this.products = data
+    })
+  }
+
 }
