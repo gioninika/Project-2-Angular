@@ -12,6 +12,7 @@ export class HomePageComponent {
   spiciness: any = 0
   nuts: boolean = false
   vegie: boolean = false
+value: any;
   constructor(public productsService: ProductsService ) {
   }
   ngOnInit() {
@@ -25,7 +26,6 @@ export class HomePageComponent {
     this.vegie = false
   }
   apply(){
-    // return this.productsService.getFiltered(this.products.vegie,this.products.nuts,this.products.spiciness);
-    
+    return this.productsService.getFiltered(this.vegie,this.nuts,this.spiciness);
   }
 }
