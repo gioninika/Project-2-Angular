@@ -56,11 +56,16 @@
     height: 50px;
     font-weight: 900;
   }
+  .c{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .mininav{
     height: 40px;
     background-color: red;
     margin-top: -21px;
-    width: 100%;
+    width: 1500px;
     display: flex;
     align-items: center;
     padding-left: 200px;
@@ -103,7 +108,7 @@
   .info12{
     display: flex;
     justify-content: space-between;
-    width: 200px;
+    width: 190px;
   }
   .info2 button{
     background-color: red;
@@ -116,4 +121,11 @@
     background-color: white;
     color: black;
     border: red 1px solid;
+  }
+  .Qty2{
+    display: flex;
+  }
+  .Qty2 button{
+    width: 20px;
+    height: 20px;
   }

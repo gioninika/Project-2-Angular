@@ -1,11 +1,12 @@
 <app-header></app-header>
-
+<div class="c">
 <div class="mininav" >
     <h2 routerLink="" class="page1">home/</h2>
     <h2 class="page2" >cart</h2>
-   
+</div>    
 </div>
-><div class="allpage" style="height: 1850px;">
+
+<div class="allpage" style="height: 1850px;">
 <div class="a">
     <div class="all">
         <div class="categoriestitle">
@@ -28,8 +29,13 @@
             </div>
             <div class="info2">
                 <div class="info12">
-                    <p class="Qty2">{{item.quantity}}</p>
-                    <p class="Price2">{{item.product.price}} $</p>
+                    <div class="Qty2">
+                        <button class="plus" (click)="productsService.UpdateBasket(item.quantity+1,item.product.id)">+</button>
+                        <p >{{item.quantity}}</p>
+                        <button class="minus" (click)="productsService.UpdateBasket(item.quantity-1,item.product.id)">-</button>
+                    </div>
+
+                    <p class="Price2">{{item.product.price}}$ * {{item.quantity}} </p>
                 </div>
                 <button (click)="productsService.deleteBasket(item.product.id)">Delete</button>
             </div>

@@ -33,37 +33,52 @@
 .Home{
     display: flex;
     align-items: center;
+    gap: 0px;
+    transition: gap 1.2s;
 }
 .Home img{
     width: 40px;
     height: 40px;
     display: none;
+
 }
 .Home:hover{
     color: yellow;
     border-bottom: 5px solid yellow;
 }
-.Cart{
+.Cart {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 0px;
+    transition: gap 1.2s;
+    margin-top: 1.7%;
+    margin-left: 4.5%;
+    cursor: pointer;
 }
+ 
 .Cart p{
-    width: 50px;
     height: 25px;
+    background: #ff0000;
+    display: inline-block;
+    line-height: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 3px;
+    position: relative;
+    font-size: 14px;
+}
+ 
+.Cart:hover{
+    gap: 30px;
+}
+.a{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
-    background-color: red;
-    border-radius: 5px;
-}
-.Cart:hover{
-    gap: 40px;
 }
 .all2 {
-    display: inline-block;
-    width: 100%;
     vertical-align: top;
     background: url(./inner_banner.jpg) no-repeat;
     background-position: top;
@@ -73,4 +88,5 @@
     justify-content: center;
     align-items: center;
     color: white;
+    width: 1500px;
 }

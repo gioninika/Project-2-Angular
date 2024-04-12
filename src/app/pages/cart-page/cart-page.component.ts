@@ -16,4 +16,6 @@ ngOnInit() {
     this.items = data
   })
 }
+
 }
+

@@ -8,6 +8,7 @@ import { ProductsService } from '../../services/products.service';
 })
 export class HomePageComponent {
   products: any
+  categs!: any
   constructor(public productsService: ProductsService ) {
     
   }
