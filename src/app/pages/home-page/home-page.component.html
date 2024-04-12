@@ -20,19 +20,19 @@
                 <div>
                     <p class="Filtertitle">Filter</p>
                     <div class="slider-container">
-                       <p class="a">Spiciness</p>
-                      <input type="range" min="0" max="4" value="0" class="slider" id="myRange">
+                       <p class="a">Spiciness {{spiciness}}</p>
+                      <input type="range" [(ngModel)]="spiciness" min="0" max="4" value="0" class="slider" id="myRange" >
                     </div>
                     <div class="checkbox1" >
-                        <input type="checkbox">
+                        <input type="checkbox" [(ngModel)]="nuts">
                         <p>No nuts</p>
                     </div>
                     <div class="checkbox2" >
-                        <input type="checkbox">
+                        <input type="checkbox" [(ngModel)]="vegie">
                         <p>Vegetarian only</p>
                     </div>
-                    <div class="red-box1"><h4 class="RBT1" >RESET</h4></div>
-                    <div class="red-box2"><h4 class="RBT2" >APPLY FILTER</h4></div>    
+                    <div class="red-box1"><h4 class="RBT1" (click)="reset()">RESET</h4></div>
+                    <div class="red-box2"><h4 class="RBT2" (click)="apply()">APPLY FILTER</h4></div>    
                     </div>
                 </div>
             <div class="list">

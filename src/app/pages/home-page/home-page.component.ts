@@ -9,12 +9,23 @@ import { ProductsService } from '../../services/products.service';
 export class HomePageComponent {
   products: any
   filter: any
-  
+  spiciness: any = 0
+  nuts: boolean = false
+  vegie: boolean = false
   constructor(public productsService: ProductsService ) {
   }
   ngOnInit() {
     this.productsService.getProducts().subscribe((data) =>{
       this.products = data
     })
+  }
+  reset(){
+    this.spiciness = 0
+    this.nuts = false
+    this.vegie = false
+  }
+  apply(){
+    // return this.productsService.getFiltered(this.products.vegie,this.products.nuts,this.products.spiciness);
+    
   }
 }
