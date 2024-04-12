@@ -16,5 +16,4 @@ export class HomePageComponent {
       this.products = data
     })
   }
-
 }

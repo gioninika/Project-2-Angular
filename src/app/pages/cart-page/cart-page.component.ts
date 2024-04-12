@@ -7,14 +7,13 @@ import { ProductsService } from '../../services/products.service';
   styleUrl: './cart-page.component.scss'
 })
 export class CartPageComponent {
-products: any
+items: any
 
 constructor(public productsService: ProductsService){}
 
 ngOnInit() {
   this.productsService.getBasket().subscribe((data) =>{
-    this.products = data
+    this.items = data
   })
 }
-
 }

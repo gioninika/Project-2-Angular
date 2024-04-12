@@ -51,7 +51,7 @@
                         </div>
                         <div class="pbtn">
                             <h1>{{item.price}} $</h1>
-                            <button (click)="products.addToBasket(item.id)">Add To Cart</button>
+                            <button (click)="productsService.addToBasket(item.product.id)">Add To Cart</button>
                         </div>
                     </div>  
                 </div>

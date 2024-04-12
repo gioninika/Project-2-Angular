@@ -17,13 +17,13 @@ export class ProductsService {
   }
   addToBasket(id: any){
     let postReq ={
-      "quantity": Number,
-      "price": Number,
+      "quantity": 1,
+      "price": 0,
       "productId": id
     }
-    return this.http.post(this.apiUrl + "Baskets/AddToBasket", postReq)
+    return this.http.post(this.apiUrl + "Baskets/AddToBasket", postReq).subscribe()
   }
   deleteBasket(id: any){
-    return this.http.delete(this.apiUrl + `Baskets/DeleteProduct/${id}`)
+    return this.http.delete(this.apiUrl + `Baskets/DeleteProduct/${id}`).subscribe()
   }
 }

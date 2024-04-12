@@ -18,19 +18,19 @@
             <div class="info">
                 <p class="Qty">Qty</p>
                 <p class="Price">Price</p>
-                <p class="Total">Total</p>
             </div>
         </div>
     </div>
-    <div class="all2" *ngFor="let item of products">
+    <div class="all2" *ngFor="let item of items">
         <div class="categories2">
             <div class="Product2">
                 <p>{{item.product.name}}</p>
             </div>
             <div class="info2">
-                <p class="Qty2">{{item.quantity}}</p>
-                <p class="Price2">{{item.price}}</p>
-                <p class="Total2">{{item.product.Total}}</p>
+                <div class="info12">
+                    <p class="Qty2">{{item.quantity}}</p>
+                    <p class="Price2">{{item.product.price}} $</p>
+                </div>
                 <button (click)="productsService.deleteBasket(item.product.id)">Delete</button>
             </div>
         </div>
