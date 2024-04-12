@@ -39,4 +39,7 @@ export class ProductsService {
       console.log(data)
     })
   }
+  getFiltered(id: any){
+    return this.http.get(this.apiUrl + "Products/GetFiltered").subscribe()
+  }
 }

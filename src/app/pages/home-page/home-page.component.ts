@@ -8,9 +8,9 @@ import { ProductsService } from '../../services/products.service';
 })
 export class HomePageComponent {
   products: any
-  categs!: any
+  filter: any
+  
   constructor(public productsService: ProductsService ) {
-    
   }
   ngOnInit() {
     this.productsService.getProducts().subscribe((data) =>{
