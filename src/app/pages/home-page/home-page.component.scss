@@ -5,7 +5,7 @@
 }
 .all{
     width: 1150px;
-    margin-top: 1100px;
+    // margin-top: 50px;
 }
 .categoriestitle{
     margin-top: 30px;
@@ -275,6 +275,13 @@
     background-color: red;
     border: none;
     color: white;
+  }
+  .nopapa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    width: 100%;
   }
   @media only screen and (max-width: 426px){
    .allpage{

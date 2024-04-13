@@ -6,11 +6,11 @@ import { Injectable } from '@angular/core';
 })
 export class ProductsService {
   apiUrl = "https://restaurant.stepprojects.ge/api/"
-  productList: any
+  
   constructor(private http: HttpClient) { }
 
   getProducts() {
-      return this.http.get(this.apiUrl + "Products/GetAll")
+      return this.http.get(this.apiUrl + `Products/GetFiltered`)
   }
   getBasket(){
     return this.http.get(this.apiUrl + "Baskets/GetAll")
@@ -40,6 +40,8 @@ export class ProductsService {
     })
   }
   getFiltered(id1: any,id2: any,id3: any){
-    return this.http.get(this.apiUrl + `Products/GetFiltered?vegeterian=${id1}&nuts=${id2}&spiciness=${id3}`).subscribe()
+    return this.http.get(this.apiUrl + `Products/GetFiltered?vegeterian=${id1}&nuts=${id2}&spiciness=${id3}`).subscribe((data) => {
+      console.log(data)
+    })
   }
 }
