@@ -11,6 +11,7 @@ export class ProductsService {
 
   getProducts() {
       return this.http.get(this.apiUrl + `Products/GetFiltered`)
+      
   }
   getBasket(){
     return this.http.get(this.apiUrl + "Baskets/GetAll")
@@ -27,7 +28,9 @@ export class ProductsService {
     return this.http.delete(this.apiUrl + `Baskets/DeleteProduct/${id}`).subscribe()
   }
   getCategoriesFunc(id: any){
-    return this.http.get(this.apiUrl + `Categories/GetCategory/${id}`).subscribe()
+    return this.http.get(this.apiUrl + `Categories/GetCategory/${id}`).subscribe((data) => {
+      console.log(data)
+    })
   }
   UpdateBasket(quantity: any, id: any) {
     let putReq = {

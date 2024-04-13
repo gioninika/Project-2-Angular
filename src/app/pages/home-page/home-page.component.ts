@@ -32,4 +32,31 @@ export class HomePageComponent {
   apply() {
     return this.productsService.getFiltered(this.vegie, this.nuts, this.spiciness)
   }
+  All(){
+    return this.productsService.getProducts()
+  }
+  Salads() {
+    return this.productsService.getCategoriesFunc(1)
+  }
+  Soups() {
+    return this.productsService.getCategoriesFunc(2)
+  }
+  ChickenDishes() {
+    return this.productsService.getCategoriesFunc(3)
+  }
+  BeefDishes() {
+    return this.productsService.getCategoriesFunc(4)
+  }
+  SeafoodDishes() {
+    return this.productsService.getCategoriesFunc(5)
+  }
+  VegitableDishes() {
+    return this.productsService.getCategoriesFunc(6)
+  }
+  BitsandBites() {
+    return this.productsService.getCategoriesFunc(7)
+  }
+  OnTheSide() {
+    return this.productsService.getCategoriesFunc(8)
+  }
 }
