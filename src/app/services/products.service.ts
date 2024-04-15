@@ -27,10 +27,11 @@ export class ProductsService {
   deleteBasket(id: any){
     return this.http.delete(this.apiUrl + `Baskets/DeleteProduct/${id}`).subscribe()
   }
-  getCategoriesFunc(id: any){
-    return this.http.get(this.apiUrl + `Categories/GetCategory/${id}`).subscribe((data) => {
-      console.log(data)
-    })
+  getAllCategories() {
+    return this.http.get("https://restaurant.stepprojects.ge/api/Categories/GetAll")
+  }
+  getCategoryById(id: any) {
+    return this.http.get(`https://restaurant.stepprojects.ge/api/Categories/GetCategory/${id}`)
   }
   UpdateBasket(quantity: any, id: any) {
     let putReq = {
@@ -42,9 +43,9 @@ export class ProductsService {
       console.log(data)
     })
   }
-  getFiltered(id1: any,id2: any,id3: any){
-    return this.http.get(this.apiUrl + `Products/GetFiltered?vegeterian=${id1}&nuts=${id2}&spiciness=${id3}`).subscribe((data) => {
-      console.log(data)
-    })
-  }
+  // getFiltered(id1: any,id2: any,id3: any){
+  //   return this.http.get(this.apiUrl + `Products/GetFiltered?vegeterian=${id1}&nuts=${id2}&spiciness=${id3}`).subscribe((data) => {
+  //     console.log(data)
+  //   })
+  // }
 }

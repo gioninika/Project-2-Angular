@@ -4,24 +4,14 @@
         <div class="categoriestitle">
             <h1>categories</h1>             
         </div> 
-        <div class="categories">
-            <div class="All" (click)="All()"><p>All</p></div>
-            <div class="Salads" (click)="Salads()"><p>Salads</p></div>
-            <div class="Soups" (click)="Soups()"><p>Soups</p></div>
-            <div class="ChickenDishes" (click)="ChickenDishes()"><p>Chicken-Dishes</p></div>
-            <div class="BeefDishes" (click)="BeefDishes()"><p>Beef-Dishes</p></div>
-            <div class="SeafoodDishes" (click)="SeafoodDishes()"><p>Seafood-Dishes</p></div>
-            <div class="VegitableDishes" (click)="VegitableDishes()"><p>Vegitable-Dishes</p></div>
-            <div class="BitsBites" (click)="BitsandBites()"><p>Bits&Bites</p></div>
-            <div class="OnTheSide" (click)="OnTheSide()"><p>On-The-Side</p></div>
-        </div>
+        <app-categories></app-categories>
         <div class="flist">
             <div class="filter">
                 <div>
                     <p class="Filtertitle">Filter</p>
                     <div class="slider-container">
                        <p class="a">Spiciness {{spiciness}}</p>
-                      <input type="range" [(ngModel)]="spiciness" min="0" max="4" value="0" class="slider" id="myRange" >
+                      <input type="range" (input)="spicinessChange()" [(ngModel)]="spicinessValue" min="0" max="5" class="slider" id="myRange" >
                     </div>
                     <div class="checkbox1" >
                         <input type="checkbox" [(ngModel)]="nuts">

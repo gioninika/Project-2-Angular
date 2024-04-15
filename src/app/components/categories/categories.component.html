@@ -1,0 +1,8 @@
+<div class="all">
+    <div class="categories">
+        <p (click)="getAllProducts()" class="card">ALL</p>
+        <div *ngFor="let item of categories">
+            <p class="card" (click)="categoryFilter(item.id)">{{item.name}}</p>
+        </div>
+    </div>
+</div>

@@ -8,6 +8,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { CartPageComponent } from './pages/cart-page/cart-page.component';
 import { FormsModule } from '@angular/forms';
 import { FooterComponent } from './components/footer/footer.component';
+import { CategoriesComponent } from './components/categories/categories.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { FooterComponent } from './components/footer/footer.component';
     HeaderComponent,
     CartPageComponent,
     FooterComponent,
+    CategoriesComponent,
   ],
   imports: [
     BrowserModule,

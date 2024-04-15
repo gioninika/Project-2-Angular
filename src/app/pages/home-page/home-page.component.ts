@@ -9,54 +9,37 @@ import { ProductsService } from '../../services/products.service';
 })
 export class HomePageComponent {
   products: any;
+  categories: any
   filter: any;
-  spiciness: any = 0;
-  nuts: boolean = false;
+  nuts: boolean = false
+  spiciness: any = "Not Chosen"
+  spicinessValue: any = 0
   vegie: boolean = false;
   value: any;
   info: any
 
   constructor(public productsService: ProductsService) {
+    
   }
   ngOnInit() {
     this.productsService.getProducts().subscribe((data) => {
       this.products = data;
-    });
+    })
+  }
+  spicinessChange(){
+    if(this.spicinessValue == 0){
+      this.spiciness = "Not Chosen"
+    }else {
+      this.spiciness = this.spicinessValue - 1
+    }
   }
   reset() {
-    this.spiciness = 0;
-    this.nuts = false;
-    this.vegie = false;
-    return this.productsService.getFiltered(this.vegie, this.nuts, this.spiciness)
+    this.spiciness = "Not Chosen"
+    this.spicinessValue = 0
   }
+
   apply() {
-    return this.productsService.getFiltered(this.vegie, this.nuts, this.spiciness)
+
   }
-  All(){
-    return this.productsService.getProducts()
-  }
-  Salads() {
-    return this.productsService.getCategoriesFunc(1)
-  }
-  Soups() {
-    return this.productsService.getCategoriesFunc(2)
-  }
-  ChickenDishes() {
-    return this.productsService.getCategoriesFunc(3)
-  }
-  BeefDishes() {
-    return this.productsService.getCategoriesFunc(4)
-  }
-  SeafoodDishes() {
-    return this.productsService.getCategoriesFunc(5)
-  }
-  VegitableDishes() {
-    return this.productsService.getCategoriesFunc(6)
-  }
-  BitsandBites() {
-    return this.productsService.getCategoriesFunc(7)
-  }
-  OnTheSide() {
-    return this.productsService.getCategoriesFunc(8)
-  }
+
 }
