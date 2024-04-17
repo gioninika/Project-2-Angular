@@ -4,7 +4,8 @@
     align-items: center;
 }
 .categories{
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto;
     width: 1100px;
     border-bottom: 3px solid red;
 }
@@ -17,8 +18,26 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 .card:hover{
     background-color: red;
     color: white;
+}
+@media only screen and (max-width: 426px){
+    .all{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .categories{
+        display: grid;
+        grid-template-columns: auto auto;
+        width: 400px;
+        border-bottom: 3px solid red;
+    }
+    .card:hover{
+        background-color: red;
+        color: white;
+    }
 }

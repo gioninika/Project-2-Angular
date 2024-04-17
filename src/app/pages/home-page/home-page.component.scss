@@ -5,13 +5,15 @@
 }
 .all{
     width: 1150px;
-    // margin-top: 50px;
 }
 .categoriestitle{
     margin-top: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.categories{
+  margin-top: 10px;
 }
 .filter {
     margin-top: 30px;
@@ -180,7 +182,6 @@
   }
   .all{
       width: 420px;
-      // margin-top: 7000px;
   }
   .categoriestitle{
       margin-top: 90px;
@@ -200,105 +201,7 @@
       justify-content: center;
       align-items: center;
   }
-  .All{
-      width: 75px;
-      height: 50px;
-  }
-  .Salads{
-      width: 75px;
-      height: 50px;
-  }
-  .Soups{
-      width: 75px;
-      height: 50px;
-  }
-  .ChickenDishes{
-      width: 150px;
-      height: 50px;
-  }
-  .BeefDishes{
-      width: 150px;
-      height: 50px;
-  }
-  .SeafoodDishes{
-      width: 150px;
-      height: 50px;
-  }
-  .VegitableDishes{
-      width: 150px;
-      height: 50px;
-  }
-  .BitsBites{
-      width: 150px;
-      height: 50px;
-  }
-  .OnTheSide{
-      width: 150px;
-      height: 50px;
-  }
-  .All:hover{
-      width: 75px;
-      height: 50px;
-      border: 1px solid red;
-      background-color: red;
-      color: white;
-  }
-  .Salads:hover{
-      width: 75px;
-      height: 50px;
-      border: 1px solid red;
-      background-color: red;
-      color: white;
-  }
-  .Soups:hover{
-      width: 75px;
-      height: 50px;
-      border: 1px solid red;
-      background-color: red;
-      color: white;
-  }
-  .ChickenDishes:hover{
-      width: 150px;
-      height: 50px;
-      border: 1px solid red;
-      background-color: red;
-      color: white;
-  }
-  .BeefDishes:hover{
-      width: 150px;
-      height: 50px;
-      border: 1px solid red;
-      background-color: red;
-      color: white;
-  }
-  .SeafoodDishes:hover{
-      width: 150px;
-      height: 50px;
-      border: 1px solid red;
-      background-color: red;
-      color: white;
-  }
-  .VegitableDishes:hover{
-      width: 150px;
-      height: 50px;
-      border: 1px solid red;
-      background-color: red;
-      color: white;
-  }
-  .BitsBites:hover{
-      width: 150px;
-      height: 50px;
-      border: 1px solid red;
-      background-color: red;
-      color: white;
-  }
-  .OnTheSide:hover{
-      width: 150px;
-      height: 50px;
-      border: 1px solid red;
-      background-color: red;
-      color: white;
-  }
+  
   .filter {
       margin-top: 30px;
       width: 410px;

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { ProductsService } from '../../services/products.service';
 
 
@@ -9,7 +9,6 @@ import { ProductsService } from '../../services/products.service';
 })
 export class HomePageComponent {
   products: any;
-  categories: any
   filter: any;
   nuts: boolean = false
   spiciness: any = "Not Chosen"
@@ -17,9 +16,14 @@ export class HomePageComponent {
   vegie: boolean = false;
   value: any;
   info: any
+   
 
   constructor(public productsService: ProductsService) {
     
+  }
+  reciveSent($event: any){
+    this.products = $event
+    console.log(this.products)
   }
   ngOnInit() {
     this.productsService.getProducts().subscribe((data) => {
@@ -41,5 +45,5 @@ export class HomePageComponent {
   apply() {
 
   }
-
+  
 }

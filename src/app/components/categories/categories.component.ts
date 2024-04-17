@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { ProductsService } from '../../services/products.service';
 
 @Component({
@@ -25,11 +25,18 @@ export class CategoriesComponent {
     this.productService.getCategoryById(id).subscribe((data: any) => {
       this.products = data.products
     })
+
   }
 
   getAllProducts() {
     this.productService.getProducts().subscribe((data) => {
       this.products = data
     })
+  }
+
+  @Output() Products = new EventEmitter<any>() 
+
+  sent(){
+    this.Products.emit(this.products)    
   }
 }

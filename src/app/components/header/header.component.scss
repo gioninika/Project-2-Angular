@@ -70,7 +70,9 @@
 }
  
 .Cart:hover{
-    gap: 30px;
+    img:hover{
+        transform: translateX(20px);
+    }
 }
 .a{
     display: flex;
@@ -161,15 +163,13 @@
         position: relative;
         font-size: 14px;
     }
-     
-    .Cart:hover{
-        gap: 30px;
-    }
+
     .a{
         display: flex;
         justify-content: center;
         align-items: center;
     }
+    
     .all2 {
         vertical-align: top;
         background: url(./inner_banner.jpg) no-repeat;

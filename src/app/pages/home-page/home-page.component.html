@@ -4,7 +4,10 @@
         <div class="categoriestitle">
             <h1>categories</h1>             
         </div> 
-        <app-categories></app-categories>
+        <div class="categories">
+            <app-categories (Products)="reciveSent($event)"></app-categories>            
+        </div>
+
         <div class="flist">
             <div class="filter">
                 <div>
