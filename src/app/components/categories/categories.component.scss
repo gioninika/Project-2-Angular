@@ -25,11 +25,7 @@ p{
     color: white;
 }
 @media only screen and (max-width: 426px){
-    .all{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+    
     .categories{
         display: grid;
         grid-template-columns: auto auto;
