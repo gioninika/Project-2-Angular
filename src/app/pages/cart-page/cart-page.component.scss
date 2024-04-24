@@ -129,6 +129,17 @@
     width: 20px;
     height: 20px;
   }
+  .foot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: red;
+    color: white;
+    font-weight: 700;
+    width: 100%;
+    margin-top: 30px;
+  }
   @media only screen and (max-width: 426px) {
     .allpage{
       display: flex;
@@ -266,4 +277,14 @@
       width: 20px;
       height: 20px;
     }
+    .foot{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50px;
+      background-color: red;
+      color: white;
+      font-weight: 700;
+      width: 425px;
+  }
   }

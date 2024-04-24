@@ -25,7 +25,9 @@ export class ProductsService {
     return this.http.post(this.apiUrl + "Baskets/AddToBasket", postReq).subscribe()
   }
   deleteBasket(id: any){
-    return this.http.delete(this.apiUrl + `Baskets/DeleteProduct/${id}`).subscribe()
+    return this.http.delete(this.apiUrl + `Baskets/DeleteProduct/${id}`).subscribe((data) => {
+      location.reload()
+    })
   }
   getAllCategories() {
     return this.http.get("https://restaurant.stepprojects.ge/api/Categories/GetAll")
@@ -40,6 +42,12 @@ export class ProductsService {
       "productId": id
     }
     return this.http.put(this.apiUrl + `Baskets/UpdateBasket`, putReq).subscribe((data) => {
+      console.log(data)
+      location.reload()
+    })
+  }
+  getPrice(){
+    return this.http.get(this.apiUrl + `Baskets/GetAll`).subscribe((data) => {
       console.log(data)
     })
   }
