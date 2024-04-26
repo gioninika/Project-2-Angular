@@ -9,6 +9,7 @@ import { CartPageComponent } from './pages/cart-page/cart-page.component';
 import { FormsModule } from '@angular/forms';
 import { FooterComponent } from './components/footer/footer.component';
 import { CategoriesComponent } from './components/categories/categories.component';
+import { CheckPageComponent } from './pages/check-page/check-page.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { CategoriesComponent } from './components/categories/categories.componen
     CartPageComponent,
     FooterComponent,
     CategoriesComponent,
+    CheckPageComponent,
   ],
   imports: [
     BrowserModule,
