@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital@0;1&display=swap');
 
 *{
     box-sizing: border-box;
@@ -6,7 +6,9 @@
     padding: 0px;
 }
 body{
-    font-family: "Roboto", sans-serif;
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    font-variation-settings: "width" 100;
 }

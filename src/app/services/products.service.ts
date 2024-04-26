@@ -51,5 +51,5 @@ export class ProductsService {
       console.log(data)
     })
   }
-  
+
 }
