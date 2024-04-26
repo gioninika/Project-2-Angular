@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, } from '@angular/core';
 import { ProductsService } from '../../services/products.service';
 
 
@@ -8,42 +8,60 @@ import { ProductsService } from '../../services/products.service';
   styleUrl: './home-page.component.scss'
 })
 export class HomePageComponent {
-  products: any;
+  products: any = []
   filter: any;
   nuts: boolean = false
-  spiciness: any = "Not Chosen"
+  spiciness: string | number = "Not Chosen"
   spicinessValue: any = 0
   vegie: boolean = false;
   value: any;
-  info: any
-   
+  productshow: any = []
 
   constructor(public productsService: ProductsService) {
     
   }
+
   reciveSent($event: any){
-    this.products = $event
-    console.log(this.products)
+    this.productshow = $event
+    console.log(this.productshow)
   }
   ngOnInit() {
     this.productsService.getProducts().subscribe((data) => {
       this.products = data;
+      this.productshow = data;
     })
   }
   spicinessChange(){
     if(this.spicinessValue == 0){
       this.spiciness = "Not Chosen"
     }else {
-      this.spiciness = this.spicinessValue - 1
+      this.spicinessValue--
+
+      this.spiciness = this.spicinessValue
     }
   }
   reset() {
+    this.productshow = this.products
     this.spiciness = "Not Chosen"
     this.spicinessValue = 0
+    this.vegie = false
+    this.nuts = false
   }
 
   apply() {
-    
+    this.productshow = []
+    for(let i = 0; i < this.products.length; i++){
+      if(this.spiciness == "Not Chosen"){
+        if(this.products[i].nuts !== this.nuts && this.products[i].vegieeterian !== this.vegie){
+          this.productshow.push(this.products[i])
+        }
+      }else {
+        if(this.products[i].nuts !== this.nuts && this.products[i].vegieeterian !== this.vegie && this.products[i].spiciness == this.spicinessValue - 1){
+          this.productshow.push(this.products[i])
+        }
+      }
+    }
+    console.log(this.productshow)
+    return this.productshow
   }
-  
 }

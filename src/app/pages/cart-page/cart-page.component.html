@@ -35,7 +35,7 @@
                         <button class="minus" (click)="productsService.UpdateBasket(item.quantity-1,item.product.id)">-</button>
                     </div>
 
-                    <p class="Price2">{{prices}} $</p>
+                    <p class="Price2">{{item.quantity * item.product.price}} $</p>
                 </div>
                 <button (click)="productsService.deleteBasket(item.product.id)">Delete</button>
             </div>

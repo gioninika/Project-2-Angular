@@ -24,12 +24,12 @@
                         <input type="checkbox" [(ngModel)]="vegie">
                         <p>Vegetarian only</p>
                     </div>
-                    <div class="red-box1"><h4 class="RBT1" (click)="reset()">RESET</h4></div>
-                    <div class="red-box2"><h4 class="RBT2" (click)="apply()">APPLY FILTER</h4></div>    
+                        <div class="red-box1" (click)="reset()"><h4 class="RBT1">RESET</h4></div>
+                        <div class="red-box2" (click)="apply()"><h4 class="RBT2">APPLY FILTER</h4></div>    
                     </div>
                 </div>
             <div class="list">
-                <div class="card" *ngFor="let item of products">
+                <div class="card" *ngFor="let item of productshow">
                     <div class="b">
                         <img class="productimage" [src]="item.image" [alt]="">
                         <h3>{{item.name}}</h3>
