@@ -10,6 +10,7 @@ import { FormsModule } from '@angular/forms';
 import { FooterComponent } from './components/footer/footer.component';
 import { CategoriesComponent } from './components/categories/categories.component';
 import { CheckPageComponent } from './pages/check-page/check-page.component';
+import { PaymentPageComponent } from './pages/payment-page/payment-page.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { CheckPageComponent } from './pages/check-page/check-page.component';
     FooterComponent,
     CategoriesComponent,
     CheckPageComponent,
+    PaymentPageComponent,
   ],
   imports: [
     BrowserModule,

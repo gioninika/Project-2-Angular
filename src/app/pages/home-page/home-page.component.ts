@@ -49,19 +49,8 @@ export class HomePageComponent {
   }
 
   apply() {
-    this.productshow = []
-    for(let i = 0; i < this.products.length; i++){
-      if(this.spiciness == "Not Chosen"){
-        if(this.products[i].nuts !== this.nuts && this.products[i].vegieeterian !== this.vegie){
-          this.productshow.push(this.products[i])
-        }
-      }else {
-        if(this.products[i].nuts !== this.nuts && this.products[i].vegieeterian !== this.vegie && this.products[i].spiciness == this.spicinessValue - 1){
-          this.productshow.push(this.products[i])
-        }
-      }
-    }
-    console.log(this.productshow)
-    return this.productshow
+    this.productsService.getFiltered(this.vegie, this.nuts, this.spicinessValue).subscribe((data) =>{
+      this.productshow = data
+    })
   }
 }

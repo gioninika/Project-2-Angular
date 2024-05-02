@@ -1,0 +1,87 @@
+.a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.all{
+    margin-top: 20px;
+    width: 900px;
+}
+.back{
+    color: red;
+}
+.info{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pay{
+    width: 900px;
+    display: flex;
+    justify-content: flex-end;
+}
+.pay button{
+    width: 80px;
+    height: 40px;
+    color: white;
+    background-color: red;
+    border: none;
+    border-radius: 3px;
+}
+.pay button:hover{
+    border: 1px solid red;
+    background-color: white;
+    color: black;
+}
+.validnum{
+    display: flex;
+    justify-content: space-between;
+}
+.validnum input{
+    width: 70px;
+}
+.b div{
+    margin-top: 10px;
+}
+.c{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .mininav{
+    height: 40px;
+    background-color: red;
+    margin-top: -21px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 200px;
+  }
+  .page1{
+    color: white;
+    font-size: 17px;
+    font-weight: 700px;
+    display: flex;
+    justify-content: baseline;
+    margin-left: 20px;
+    cursor: pointer;
+  }
+  .page3{
+    color: white;
+    font-size: 17px;
+    font-weight: 700px;
+    display: flex;
+    justify-content: baseline;
+    cursor: pointer;
+  }
+  .page2{
+    color: yellow;
+    font-size: 17px;
+    font-weight: 700px;
+    display: flex;
+    justify-content: baseline;
+  }
+  input{
+    border: red 1px solid;
+  }

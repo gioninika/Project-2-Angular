@@ -25,6 +25,7 @@
     <div class="all2" *ngFor="let item of items">
         <div class="categories2">
             <div class="Product2">
+                <img [src]="item.product.image" alt="">
                 <p>{{item.product.name}}</p>
             </div>
             <div class="info2">
@@ -42,7 +43,7 @@
         </div>
     </div>
     <div class="pay">
-        <button routerLink="/Check">Check Out</button>
+        <button routerLink="/Pay">Check Out</button>
     </div>
 </div>
 </div>

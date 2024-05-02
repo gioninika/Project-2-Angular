@@ -37,6 +37,15 @@
     height: 50px;
     font-weight: 900;
   }
+  .Product2{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  .Product2 img{
+    width: 100px;
+    height: 100px;
+  }
   .info{
     height: 50px;
     display: flex;
@@ -88,7 +97,7 @@
   }
   .all2{
     width: 1150;
-    height: 50px;
+    height: 150px;
     border: 1px solid #F3F3F3;
     display: flex;
     justify-content: center;
@@ -102,6 +111,7 @@
   .info2{
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     width: 500px;
   }
   .info12{

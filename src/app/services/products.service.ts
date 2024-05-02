@@ -51,5 +51,7 @@ export class ProductsService {
       console.log(data)
     })
   }
-
+  getFiltered(id1: any,id2: any,id3: any){
+    return this.http.get(this.apiUrl+`Products/GetFiltered?vegeterian=${id1}&nuts=${id2}&spiciness=${id3}`)
+  }
 }

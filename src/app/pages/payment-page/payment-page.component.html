@@ -1,0 +1,40 @@
+<app-header></app-header>
+<div class="c">
+    <div class="mininav" >
+        <h2 routerLink="" class="page1">home/</h2>
+        <h2 routerLink="/Cart" class="page3">cart/</h2>
+        <h2 class="page2">check out</h2>
+    </div>    
+</div>
+<div class="a">
+<div class="all">
+    <div class="back">
+        <h4 routerLink="/Cart">Back</h4>
+    </div>
+    <div class="info">
+        <div class="b">
+        <div class="cardnum">
+            <p>Card Number</p>
+            <input type="number" [(ngModel)]="cardnum"> 
+        </div>
+        <div class="cvc">
+            <p>CVC number</p>
+            <input type="number"> 
+        </div>
+        <div class="Valid">
+            <p>Valid Data</p>
+            <div class="validnum">
+                <input type="number">
+                <p>/</p>
+                <input type="number">
+            </div>
+        </div>            
+        </div>
+    </div>
+    <div class="pay">
+        <button (click)="Pay()" routerLink="/Check">Pay</button>        
+    </div>
+
+</div>
+</div>
+
