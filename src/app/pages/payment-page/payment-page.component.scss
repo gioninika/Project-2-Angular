@@ -85,3 +85,15 @@
   input{
     border: red 1px solid;
   }
+  @media only screen and (max-width: 426px){
+    .mininav{
+      padding-left: 20px;
+    }
+    .all{
+      width: 400px;
+    }
+    .pay{
+      width: 400px;
+      height: 50px;
+    }
+  }
